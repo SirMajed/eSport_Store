@@ -1,4 +1,4 @@
-#eSport Store
+# eSport Store
 Developed an online store application for selling e-sport accessories and parts on the Android platform.
 
 - Cart System
