@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/checkoutwallpaper"
+    tools:context=".SignIn">
+
+
+    <LinearLayout
+        android:paddingTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+
+            android:id="@+id/cardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Card Number: "
+            android:inputType="number"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="18sp"
+
+            android:maxLength="16"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="16"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/cardName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Card Placeholder Name: "
+            android:inputType="textCapCharacters"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="18sp"
+
+            android:maxLength="40"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="40"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"
+            />
+
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/mmyy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="MM/YY"
+            android:inputType="number"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="18sp"
+
+            android:maxLength="4"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="4"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/cvv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="CVV"
+            android:inputType="number"
+            android:text=""
+
+            android:maxLength="3"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="18sp"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="3"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Address"
+            android:inputType="text"
+            android:text=""
+
+
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="18sp"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="255"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"
+            />
+
+
+        <!--COUNTRY-->
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="590dp"
+        android:text="PAY"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="8dp"
+
+        app:cornerRadius="10dp"
+        app:fButtonColor="@color/Button"
+        app:shadowColor="@android:color/black"
+        app:shadowEnabled="true"
+        app:shadowHeight="2dp"
+
+
+        tools:layout_editor_absoluteX="-8dp"
+        tools:layout_editor_absoluteY="506dp" />
+
+    <ImageView
+        android:paddingTop="30dp"
+        android:paddingLeft="50dp"
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/logo" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:paddingLeft="95dp"
+        android:paddingTop="40dp"
+        android:text="CHECKOUT"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="70px"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <TextView
+        android:id="@+id/donthaveaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLICK HERE TO GO BACK TO THE CART"
+        android:textColor="@android:color/white"
+        android:textSize="30px"
+        android:layout_marginTop="590dp"
+        android:layout_marginLeft="110dp"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="371dp" />
+
+
+</RelativeLayout>
